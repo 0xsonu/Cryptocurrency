@@ -25,8 +25,8 @@ struct TopMoversView: View {
     }
 }
 
-struct TopMoversView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMoversView()
-    }
-}
+//struct TopMoversView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopMoversView()
+//    }
+//}
