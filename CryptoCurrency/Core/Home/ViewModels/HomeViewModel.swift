@@ -21,8 +21,6 @@ class HomeViewModel : ObservableObject {
         
         guard let url = URL(string: urlString) else {return}
         
-        print("fetching url \(url)")
-        
         URLSession.shared.dataTask(with: url) { data, res, err in
             if let err = err {
                 print("DEBUG: Error \(err.localizedDescription)")
@@ -33,7 +31,6 @@ class HomeViewModel : ObservableObject {
             
             do{
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
-                print("DEBUG: Coins \(coins)")
                 DispatchQueue.main.async {
                     self.coins = coins
                     self.configureTopMoverCoins()
