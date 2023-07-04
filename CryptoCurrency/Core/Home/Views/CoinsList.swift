@@ -28,6 +28,7 @@ struct CoinsList: View {
                 ForEach(homeViewModel.coins) { coin in
                     CoinView(coin: coin)
                 }
+                .background(Color("ItemBackgroundColor"))
             }
         }
     }

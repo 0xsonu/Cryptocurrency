@@ -52,6 +52,7 @@ struct CoinView: View {
             }
             .padding(.leading, 2)
         }
+        
         .padding(.horizontal)
         .padding(.vertical, 4)
     }
